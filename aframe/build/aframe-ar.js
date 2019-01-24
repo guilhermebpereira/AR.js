@@ -5199,7 +5199,10 @@ ARjs.Context = THREEx.ArToolkitContext = function(parameters){
 		cameraParametersUrl: ARjs.Context.baseURL + 'parameters/camera_para.dat',
 
 		// tune the maximum rate of pose detection in the source image
-		maxDetectionRate: 60,
+        maxDetectionRate: 60,
+        video: {
+            facingMode: { exact: "environment" }
+        },
 		// resolution of at which we detect pose in the source image
 		canvasWidth: 640,
 		canvasHeight: 480,
